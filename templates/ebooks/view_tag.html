@@ -4,7 +4,7 @@
 <h2 class="section-title">Books Tagged <em>"{{ tag }}"</em></h2>
 <ul>
     {% for book in books %}
-    
+
        <article class="book">
 			<div class="book-sidebar">
 				<figure class="cover">
@@ -23,7 +23,7 @@
 					</a>
 				</figure>
 			</div>
-			
+
 			<div class="book-summary">
 				<p class="series"><a href="">Series Title:</a> Book 3</p>
 				<h3>
@@ -35,17 +35,17 @@
 					{{ book.title }}
 					</a>
 				</h3>
-				
+
 				<ul class="byline">
 					<li class="title">written by:</li>
 	                {% for author in book.authors.all %}
                     <li>{{ author }}</li>
 	                {% endfor %}
 				</ul>
-				
+
 				<hr />
 				<p>{{ book.description|truncatewords:100|safe }}</p>
-				
+
 				<hr />
 				<ul class="formats">
 					<li class="title">Available Formats:</li>
@@ -54,7 +54,7 @@
 					{% endfor %}
 				</ul>
 
-			</div>			
+			</div>
 		</article>
     {% endfor %}
 </ul>

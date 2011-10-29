@@ -4,7 +4,7 @@
 
 {% block content %}
 	<h2 class="section-title">Search Results</h2>
-	
+
 	{% if books %}
 		{% for book in books %}
 		<article class="book">
@@ -25,7 +25,7 @@
 					</a>
 				</figure>
 			</div>
-			
+
 			<div class="book-summary">
 				{% comment %}
 				<p class="series"><a href="">Series Title:</a> Book 3</p>
@@ -39,17 +39,17 @@
 					{{ book.title }}
 					</a>
 				</h3>
-				
+
 				<ul class="byline">
 					<li class="title">written by:</li>
 	                {% for author in book.authors.all %}
                     <li>{{ author }}</li>
 	                {% endfor %}
 				</ul>
-				
+
 				<hr />
 				<p>{{ book.description|truncatewords:100|safe }}</p>
-				
+
 				<hr />
 				<ul class="formats">
 					<li class="title">Available Formats:</li>
@@ -58,9 +58,9 @@
 					{% endfor %}
 				</ul>
 
-			</div>			
+			</div>
 		</article>
-		{% endfor %}		
+		{% endfor %}
 	{% else %}
 		<p>You Suck at Searching, Try Again</p>
 	{% endif %}

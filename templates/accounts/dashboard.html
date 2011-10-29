@@ -7,9 +7,9 @@
 {% block content %}
 
     <div class="book-sidebar">
-        
+
 		{% gravatar view_user 160 %}
-		
+
         {% if view_user.first_name %}
         <h1>{{ view_user.first_name }}</h1>
         {% else %}
@@ -18,11 +18,11 @@
         {% if can_edit %}
             <div><a href="{% url edit_profile view_user.username %}">EDIT PROFILE</a></div>
         {% endif %}
-        
-        
+
+
         books uploaded: {{ view_user.get_profile.uploaded_books_count }}
-        
-        
+
+
     </div>
     <div class="book-main">
          <h2 class="section-title">Recent Activity</h2>

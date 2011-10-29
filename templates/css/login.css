@@ -8,7 +8,7 @@ body, html { background: rgb(253,250,247); text-align: center; }
 header.main { min-height: 105px; background: url(/images/bg-head-wood.jpg) repeat-x 0 0; padding: 1px 0; margin-bottom: 40px; }
 	#logo { margin-top: 30px; text-align: center; }
 	#logo a { border: none; color: inherit; }
-	
+
 form {
 	margin: 0 auto;
 	width: 300px;

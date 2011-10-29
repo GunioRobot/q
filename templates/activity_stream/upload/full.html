@@ -5,7 +5,7 @@
     <div class="activity-details">
     	<a href="{% url view_user activity_item.actor.username %}">
     		{{ activity_item.actor.username }}
-    	</a> 
+    	</a>
     	<strong>uploaded </strong>
     	<a href="{% url book_info activity_item.first_subject.content_object.ebook.slug %}">{{ activity_item.first_subject.content_object.ebook.title }}</a>
         in <strong>{{ activity_item.first_subject.content_object.format }}</strong> format

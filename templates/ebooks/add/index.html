@@ -5,7 +5,7 @@
 {% block content %}
 	{% if book %}
 		<h2 class="section-title">Add a Book</h2>
-		
+
 		<div class="book-sidebar">
 			<figure class="cover">
 	        {% if book.cover %}
@@ -24,10 +24,10 @@
         {% endif %}
 
 		        {{ book_form.as_p }}
-				
+
 				<hr />
-				
-				<input type="hidden" name="cover_url" value="{{ book.temp_cover_url }}" />	
+
+				<input type="hidden" name="cover_url" value="{{ book.temp_cover_url }}" />
 				<p>
 					<input type="submit" value="Add {{ book.title }}" class="submit-large" />
 				</p>
